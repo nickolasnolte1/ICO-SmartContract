@@ -8,7 +8,10 @@
 
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+El propósito de este proyecto es desarrollar una Oferta Inicial de Monedas (ICO) basada en la cadena de bloques Ethereum. La ICO tiene como objetivo recaudar 10 Sepolia-ETH, y para lograrlo, se implementará un contrato inteligente en Solidity que permitirá a los usuarios participar en la ICO mediante la transferencia de Sepolia-ETH. Además, se creará una interfaz de usuario simple para que los inversores puedan interactuar con el contrato inteligente. 
+
+
+Este proyecto busca demostrar la capacidad de desarrollar contratos inteligentes y aplicaciones descentralizadas en Ethereum, así como la interacción fluida entre la cadena de bloques y una interfaz de usuario amigable para los usuarios finales.
 
 ## Getting Started <a name = "getting_started"></a>
 
