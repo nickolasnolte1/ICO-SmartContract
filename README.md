@@ -17,7 +17,7 @@ Este proyecto busca demostrar la capacidad de desarrollar contratos inteligentes
 
 Estas instrucciones le proporcionarán una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y prueba. Consulte [deployment](#deployment) para obtener notas sobre cómo implementar el proyecto en un sistema en vivo.
 
-### Prerequisites
+## Prerequisites
 
 What things you need to install the software and how to install them.
 
