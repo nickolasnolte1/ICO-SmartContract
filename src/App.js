@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import web3 from './web3';
+import './style.css';
 
 function App() {
   const [account, setAccount] = useState('');
@@ -25,14 +26,14 @@ function App() {
     // y el estado de la ICO aquí
 
     // Actualizar el estado de la ICO
-    setIcoStatus('La ICO está en curso');
+    setIcoStatus('En curso');
   }
 
   // Añadir la lógica para invertir en la ICO y reclamar tokens aquí
 
   return (
     <div className="App">
-      <h1>Mi ICO</h1>
+      <h1>BodoCoin Interface</h1>
       <p>Cuenta actual: {account}</p>
       <p>Saldo ETH: {ethBalance} ETH</p>
       <p>Saldo de Tokens: {tokenBalance} BodoCoin</p>
