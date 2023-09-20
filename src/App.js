@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import web3 from './web3';
 import './style.css';
@@ -8,6 +7,7 @@ function App() {
   const [ethBalance, setEthBalance] = useState('0');
   const [tokenBalance, setTokenBalance] = useState('0');
   const [icoStatus, setIcoStatus] = useState('');
+  const [investmentAmount, setInvestmentAmount] = useState(''); // Nuevo estado para la cantidad de inversión
 
   useEffect(() => {
     // Cargar la cuenta del usuario y los saldos
@@ -25,11 +25,22 @@ function App() {
     // Añadir la lógica para obtener el saldo de tokens (BodoCoin)
     // y el estado de la ICO aquí
 
-    // Actualizar el estado de la ICO
+    // Simulamos valores ficticios para fines de demostración
+    setTokenBalance('1000');
     setIcoStatus('En curso');
   }
 
-  // Añadir la lógica para invertir en la ICO y reclamar tokens aquí
+  async function investInICO() {
+    // Añadir lógica para invertir en ICO aquí
+    // Por ejemplo, enviar una transacción de Ethereum para participar en la ICO
+    console.log('Invertir en ICO');
+  }
+
+  async function claimTokens() {
+    // Añadir lógica para reclamar tokens aquí
+    // Por ejemplo, enviar una transacción para reclamar tokens
+    console.log('Reclamar Tokens');
+  }
 
   return (
     <div className="App">
@@ -39,7 +50,21 @@ function App() {
       <p>Saldo: {tokenBalance} BDC</p>
       <p>Estado ICO: {icoStatus}</p>
 
-      {/* Agregar formularios o botones para invertir y reclamar tokens */}
+      {/* Botones para invertir y reclamar tokens */}
+      <div className="buttons">
+        <div className="form">
+          <label htmlFor="investment-amount">Cantidad de Sepolia-ETH a invertir:</label>
+          <input
+            type="text"
+            id="investment-amount"
+            placeholder="Ej. 10.00"
+            value={investmentAmount}
+            onChange={(e) => setInvestmentAmount(e.target.value)}
+          />
+          <button onClick={investInICO}>Invertir en ICO</button>
+        </div>
+        <button onClick={claimTokens}>Reclamar Tokens</button>
+      </div>
     </div>
   );
 }
