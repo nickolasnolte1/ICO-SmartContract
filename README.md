@@ -6,12 +6,11 @@ El propósito de este proyecto es desarrollar una Oferta Inicial de Monedas (ICO
 
 ## Detalles del Token y la ICO
 
-- Nombre del Token: A elección del alumno (Ejemplo: Marrocoin)
-- Símbolo del Token: Tres letras mayúsculas (Ejemplo: MRC)
+- Nombre del Token: BODOCOIN
+- Símbolo del Token: BDC
 - Decimales: 18
 - Duración de la ICO: 7 días
-- Valor del Token: El valor del token en Sepolia-ETH estará determinado por el mes de nacimiento del dueño de la ICO. Específicamente, el valor será 10 veces el número del mes de nacimiento. Por ejemplo, si el dueño de la ICO nació en septiembre (mes número 9), entonces el valor del token será de 90 Marrocoins por 1 Sepolia-ETH.
-
+- Valor del Token:  40 BDC por cada SepoliaETH
 
 Este proyecto busca demostrar la capacidad de desarrollar contratos inteligentes y aplicaciones descentralizadas en Ethereum, así como la interacción fluida entre la cadena de bloques y una interfaz de usuario amigable para los usuarios finales.
 
