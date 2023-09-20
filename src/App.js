@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <h1>BodoCoin Interface</h1>
       <p>Cuenta actual: {account}</p>
-      <p>Saldo ETH: {ethBalance} ETH</p>
+      <p>Saldo disponible: {ethBalance} SepoliaETH</p>
       <p>Saldo de Tokens: {tokenBalance} BDC</p>
       <p>Estado ICO: {icoStatus}</p>
 
