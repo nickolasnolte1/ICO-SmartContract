@@ -15,7 +15,7 @@ Este proyecto busca demostrar la capacidad de desarrollar contratos inteligentes
 
 ## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Estas instrucciones le proporcionarán una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y prueba. Consulte [deployment](#deployment) para obtener notas sobre cómo implementar el proyecto en un sistema en vivo.
 
 ### Prerequisites
 
