@@ -1,4 +1,4 @@
-# Project Title
+# ICO - Smart Contract
 
 ## Table of Contents
 
