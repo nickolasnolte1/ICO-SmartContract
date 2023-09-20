@@ -1,5 +1,7 @@
 # ICO - Smart Contract
 
+[![N|Solid](https://www.cysae.com/wp-content/uploads/2019/04/2018.03.08-Smart-Contract-Legal-02-1.png)]([https://nodesource.com/products/nsolid](https://www.cysae.com/wp-content/uploads/2019/04/2018.03.08-Smart-Contract-Legal-02-1.png))
+
 ## About
 El propósito de este proyecto es desarrollar una Oferta Inicial de Monedas (ICO) basada en la cadena de bloques Ethereum. La ICO tiene como objetivo recaudar 10 Sepolia-ETH, y para lograrlo, se implementará un contrato inteligente en Solidity que permitirá a los usuarios participar en la ICO mediante la transferencia de Sepolia-ETH. Además, se creará una interfaz de usuario simple para que los inversores puedan interactuar con el contrato inteligente. 
 
