@@ -22,3 +22,7 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 
 - Permite que cualquier usuario participe en la ICO transfiriendo Sepolia-ETH.
 - Los tokens adquiridos deben ser entregados al inversor una vez que finalice la ICO.
+
+
+## Autores
+Nickolas Nolte
