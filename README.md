@@ -1,14 +1,16 @@
 # ICO - Smart Contract
 
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-
-## About <a name = "about"></a>
-
+## About
 El propósito de este proyecto es desarrollar una Oferta Inicial de Monedas (ICO) basada en la cadena de bloques Ethereum. La ICO tiene como objetivo recaudar 10 Sepolia-ETH, y para lograrlo, se implementará un contrato inteligente en Solidity que permitirá a los usuarios participar en la ICO mediante la transferencia de Sepolia-ETH. Además, se creará una interfaz de usuario simple para que los inversores puedan interactuar con el contrato inteligente. 
+
+
+## Detalles del Token y la ICO
+
+- Nombre del Token: A elección del alumno (Ejemplo: Marrocoin)
+- Símbolo del Token: Tres letras mayúsculas (Ejemplo: MRC)
+- Decimales: 18
+- Duración de la ICO: 7 días
+- Valor del Token: El valor del token en Sepolia-ETH estará determinado por el mes de nacimiento del dueño de la ICO. Específicamente, el valor será 10 veces el número del mes de nacimiento. Por ejemplo, si el dueño de la ICO nació en septiembre (mes número 9), entonces el valor del token será de 90 Marrocoins por 1 Sepolia-ETH.
 
 
 Este proyecto busca demostrar la capacidad de desarrollar contratos inteligentes y aplicaciones descentralizadas en Ethereum, así como la interacción fluida entre la cadena de bloques y una interfaz de usuario amigable para los usuarios finales.
