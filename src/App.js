@@ -36,7 +36,7 @@ function App() {
       <h1>BodoCoin Interface</h1>
       <p>Cuenta actual: {account}</p>
       <p>Saldo ETH: {ethBalance} ETH</p>
-      <p>Saldo de Tokens: {tokenBalance} BodoCoin</p>
+      <p>Saldo de Tokens: {tokenBalance} BDC</p>
       <p>Estado ICO: {icoStatus}</p>
 
       {/* Agregar formularios o botones para invertir y reclamar tokens */}
