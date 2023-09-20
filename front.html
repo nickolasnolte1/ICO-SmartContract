@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodoCoin ICO</title>
+</head>
+<body>
+    <h1>BodoCoin ICO</h1>
+
+    <!-- Mostrar el saldo de ETH del usuario -->
+    <p>Saldo ETH: <span id="ethBalance">Cargando...</span></p>
+
+    <!-- Mostrar el saldo de BodoCoin del usuario -->
+    <p>Saldo BodoCoin: <span id="bodoCoinBalance">Cargando...</span></p>
+
+    <!-- Mostrar la cantidad de BodoCoin pendiente de reclamo por el usuario -->
+    <p>BodoCoin Pendiente de Reclamo: <span id="pendingBodoCoin">Cargando...</span></p>
+
+    <!-- Mostrar el estado temporal de la ICO -->
+    <p>Estado ICO:</p>
+    <p>Tiempo restante: <span id="timeRemaining">Cargando...</span> días</p>
+    <p>Cantidad de BodoCoin vendidos: <span id="bodoCoinSold">Cargando...</span></p>
+    <p>Cantidad de ETH recibidos: <span id="ethReceived">Cargando...</span></p>
+
+    <!-- Inversión en la ICO -->
+    <label for="investmentAmount">Invertir en ICO (ETH):</label>
+    <input type="number" id="investmentAmount" placeholder="Cantidad en ETH">
+    <button onclick="investInICO()">Invertir</button>
+
+    <!-- Reclamar BodoCoin -->
+    <button onclick="claimBodoCoin()">Reclamar BodoCoin</button>
+
+    <!-- Importa Web3.js y tu archivo app.js -->
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
