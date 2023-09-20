@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>BodoCoin Interface</h1>
+      <h1>BODOCOIN Interface</h1>
       <p>Cuenta actual: {account}</p>
       <p>Saldo disponible: {ethBalance} SepoliaETH</p>
       <p>Saldo de Tokens: {tokenBalance} BDC</p>
