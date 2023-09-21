@@ -44,26 +44,31 @@ function App() {
 
   return (
     <div className="App">
-      <h1>BODOCOIN Interface</h1>
-      <p>Cuenta actual: {account}</p>
-      <p>Saldo disponible: {ethBalance} SepoliaETH</p>
-      <p>Saldo: {tokenBalance} BDC</p>
-      <p>Estado ICO: {icoStatus}</p>
+      <div>
+        <h1>BODOCOIN Interface</h1>
+      </div>
+      <p><strong>Cuenta actual:</strong> {account}</p>
+      <p><strong>Saldo disponible:</strong> {ethBalance} SepoliaETH</p>
+      <p><strong>Saldo:</strong> {tokenBalance} BDC</p>
+      <p><strong>Estado ICO:</strong> {icoStatus}</p>
 
       {/* Botones para invertir y reclamar tokens */}
       <div className="buttons">
         <div className="form">
-          <label htmlFor="investment-amount">Cantidad de Sepolia-ETH a invertir:</label>
+          <label htmlFor="investment-amount"><strong>Cantidad de Sepolia-ETH a invertir:</strong>     </label>
           <input
             type="text"
             id="investment-amount"
-            placeholder="Ej. 10.00"
+            placeholder="Ej. 2.00"
             value={investmentAmount}
             onChange={(e) => setInvestmentAmount(e.target.value)}
           />
           <button onClick={investInICO}>Invertir en ICO</button>
         </div>
         <button onClick={claimTokens}>Reclamar Tokens</button>
+      </div>
+      <div>
+        <p3 className="App2">1 SepoliaETH = 40 BDC</p3>
       </div>
     </div>
   );
