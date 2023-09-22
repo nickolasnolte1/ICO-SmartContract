@@ -37,7 +37,7 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 2. Es necesario instalar el módulo de *Ethers* dentro del ambiente de React con el siguiente comando: `nmp install ethers`
 3. Tener una billetera en MetaMask.
 4. Tener SepoliaETH dentro de la billetera
-   4.1 Las Sepolias se tienen que minar desde antes. Link: lia-faucet.pk910.de/#/
+   4.1 Las Sepolias se tienen que minar desde antes. [Minar Sepolias](lia-faucet.pk910.de/#/)
 5. Correr el el file App.js con el siguiente comando: `npm start`
 6. 
 
