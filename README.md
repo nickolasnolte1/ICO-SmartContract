@@ -33,11 +33,16 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 
 ## Requerimientos para correr el app
 
-1. Es necesario instalar el módulo de *Web3* dentro del ambiente de React con el siguiente comando: `npm install web3`
-2. Es necesario instalar el módulo de *Ethers* dentro del ambiente de React con el siguiente comando: `nmp install ethers`
-3. Tener una billetera en MetaMask.
-4. Tener SepoliaETH dentro de la billetera
-   4.1 Las Sepolias se tienen que minar desde antes. Link para minar: lia-faucet.pk910.de/#/
+1. Es necesario instalar el módulo de *Web3* y el módulo *Ethers* dentro del ambiente de React con el siguiente comando: `npm install web3`
+
+```bash
+ npm install web3
+ npm install Ethers
+```
+
+2. Tener una billetera en MetaMask.
+3. Tener SepoliaETH dentro de la billetera
+4. Las Sepolias se tienen que minar desde antes. Link para minar: lia-faucet.pk910.de/#/
 
 5. Correr el el file App.js con el siguiente comando: `npm start`
 6. 
