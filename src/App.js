@@ -82,13 +82,8 @@ function App() {
       console.error('Error al reclamar tokens:', error);
       alert('Error al reclamar tokens. Consulta la consola para obtener más detalles.');
     }
-
-
-
-
   }
   
-
   return (
     <div className="App">
       <div>
