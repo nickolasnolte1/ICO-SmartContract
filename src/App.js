@@ -10,11 +10,6 @@ function App() {
   const [icoStatus, setIcoStatus] = useState('');
   const [investmentAmount, setInvestmentAmount] = useState(''); // Nuevo estado para la cantidad de inversión
 
-  useEffect(() => {
-    // Cargar la cuenta del usuario y los saldos
-    loadBlockchainData();
-  }, []);
-
   async function loadBlockchainData() {
     try {
       const accounts = await web3.eth.getAccounts();
@@ -25,7 +20,7 @@ function App() {
       setEthBalance(web3.utils.fromWei(ethBalance, 'ether'));
   
       // Consultar el saldo de tokens (BodoCoin) desde tu contrato inteligente
-      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); 
       const tokenBalance = await contract.methods.balanceOf(account).call();
       setTokenBalance(tokenBalance);
   
@@ -37,6 +32,10 @@ function App() {
       alert('Error al cargar datos desde el contrato. Consulta la consola para obtener más detalles.');
     }
   }
+
+  useEffect(() => {
+    loadBlockchainData();
+  }, []);
   
 
   async function investInICO() {
@@ -51,7 +50,7 @@ function App() {
       const investmentInWei = web3.utils.toWei(investmentAmount, 'ether');
   
       // Llama a la función de inversión en el contrato inteligente
-      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); 
       await contract.methods.invest().send({
         from: account,
         value: investmentInWei,
@@ -69,7 +68,7 @@ function App() {
   async function claimTokens() {
     try {
       // Llama a la función de reclamación de tokens en tu contrato inteligente
-      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); 
       await contract.methods.claimTokens().send({
         from: account,
       });
@@ -90,7 +89,7 @@ function App() {
       </div>
       <p><strong>Cuenta actual:</strong> {account}</p>
       <p><strong>Saldo disponible:</strong> {ethBalance} SepoliaETH</p>
-      <p><strong>Saldo:</strong> {tokenBalance} BDC</p>
+      <p><strong>Saldo en BDC:</strong> {tokenBalance}</p>
       <p><strong>Estado ICO:</strong> {icoStatus}</p>
 
       {/* Botones para invertir y reclamar tokens */}
