@@ -42,7 +42,7 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 
 2. Crear una billetera en MetaMask.
 3. Tener SepoliaETH dentro de la billetera
-4. Las Sepolias se tienen que minar desde antes. Link para minar: lia-faucet.pk910.de/#/
+4. Las Sepolias se tienen que minar desde antes. *Link para minar: lia-faucet.pk910.de/#/*
 
 5. Correr el el file App.js
 ```bash
