@@ -51,7 +51,7 @@ nmp start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-6. Invertir el Valor en Sepolia.
+6. Invertir el Valor en Sepolia para convertirlos a BDC.
 7. Agregar los BodoCoins a la billetera de MetaMask: `0xe051aeF51F721D107E1A81B675eA2ad43ca4F682`
 
 
