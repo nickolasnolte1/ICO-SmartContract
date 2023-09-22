@@ -25,6 +25,18 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 - Permite que cualquier usuario participe en la ICO transfiriendo Sepolia-ETH.
 - Los tokens adquiridos deben ser entregados al inversor una vez que finalice la ICO.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- El contrato fue hecho en Remix IDE
+- Se conectó la billetera de MetaMask al contrato directamente en Remix, a la hora de hacer deploy al contrato
+
+
+## Requerimientos para correr el app
+
+1. Es necesario instalar el módulo de Web3 con el siguiente comando: `npm install web3`
+2. Es necesario instalar el módulo de Ethers con el siguiente comando: `nmp install ethers`
+3. 
+
 
 ## Autores
 Nickolas Nolte
