@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import web3 from './web3';
 import './style.css';
+import contractABI from './ABI.json';
 
 function App() {
   const [account, setAccount] = useState('');
@@ -31,16 +32,48 @@ function App() {
   }
 
   async function investInICO() {
-    // Añadir lógica para invertir en ICO aquí
-    // Por ejemplo, enviar una transacción de Ethereum para participar en la ICO
-    console.log('Invertir en ICO');
+    try {
+      const investmentInEther = parseFloat(investmentAmount);
+      if (isNaN(investmentInEther) || investmentInEther <= 0) {
+        alert('Ingrese una cantidad válida para invertir.');
+        return;
+      }
+  
+      // Convierte la cantidad de inversión de Ether a Wei
+      const investmentInWei = web3.utils.toWei(investmentAmount, 'ether');
+  
+      // Llama a la función de inversión en el contrato inteligente
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      await contract.methods.invest().send({
+        from: account,
+        value: investmentInWei,
+      });
+  
+      // Actualiza los saldos y estados después de la inversión
+      loadBlockchainData();
+    } catch (error) {
+      console.error('Error al invertir en la ICO:', error);
+      alert('Error al invertir en la ICO. Consulta la consola para obtener más detalles.');
+    }
   }
+  
 
   async function claimTokens() {
-    // Añadir lógica para reclamar tokens aquí
-    // Por ejemplo, enviar una transacción para reclamar tokens
-    console.log('Reclamar Tokens');
+    try {
+      // Llama a la función de reclamación de tokens en tu contrato inteligente
+      const contract = new web3.eth.Contract(contractABI, contractAddress); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      await contract.methods.claimTokens().send({
+        from: account,
+      });
+  
+      // Actualiza los saldos y estados después de la reclamación
+      loadBlockchainData();
+    } catch (error) {
+      console.error('Error al reclamar tokens:', error);
+      alert('Error al reclamar tokens. Consulta la consola para obtener más detalles.');
+    }
   }
+  
 
   return (
     <div className="App">
