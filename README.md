@@ -33,7 +33,7 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 
 ## Requerimientos para correr el app
 
-1. Es necesario instalar el módulo de *Web3* y el módulo *Ethers* dentro del ambiente de React con el siguiente comando: `npm install web3`
+1. Es necesario instalar el módulo de *Web3* y el módulo *Ethers* dentro del ambiente de React.
 
 ```bash
  npm install web3
