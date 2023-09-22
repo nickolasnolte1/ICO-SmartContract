@@ -58,17 +58,5 @@ nmp start
 7. Agregar los BodoCoins a la billetera de MetaMask: `0xe051aeF51F721D107E1A81B675eA2ad43ca4F682`
 
 
-
-<div align="left">
-  <img src="URL_DEL_LOGO" height="40" alt="html5 logo" />
-  <img width="12" />
-  <img src="URL_DEL_LOGO" height="40" alt="css3 logo" />
-  <img width="12" />
-  <img src="URL_DEL_LOGO" height="40" alt="javascript logo" />
-  <img width="12" />
-  <img src="URL_DEL_LOGO" height="40" alt="react logo" />
-</div>
-
-
 ## Autores
 Nickolas Nolte
