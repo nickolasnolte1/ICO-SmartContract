@@ -40,7 +40,7 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
  npm install Ethers
 ```
 
-2. Tener una billetera en MetaMask.
+2. Crear una billetera en MetaMask.
 3. Tener SepoliaETH dentro de la billetera
 4. Las Sepolias se tienen que minar desde antes. Link para minar: lia-faucet.pk910.de/#/
 
@@ -51,11 +51,29 @@ nmp start
 # The server will initialize in the <http://localhost:3000>
 ```
 
+6. 
 
 
-Dirección que se debe utilizar para enviar SepoliaETH's: `0xe051aeF51F721D107E1A81B675eA2ad43ca4F682`
+
+7. Agregar los BodoCoins a la billetera de MetaMask: `0xe051aeF51F721D107E1A81B675eA2ad43ca4F682`
 
 
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+</div>
+
+###
+
+<img src="https://raw.githubusercontent.com/nickolasnolte1/nickolasnolte1/output/snake.svg" alt="Snake animation" />
+
+###
 
 ## Autores
 Nickolas Nolte
