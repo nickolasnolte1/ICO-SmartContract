@@ -9,6 +9,7 @@ function App() {
   const [tokenBalance, setTokenBalance] = useState('0');
   const [icoStatus, setIcoStatus] = useState('');
   const [investmentAmount, setInvestmentAmount] = useState(''); // Nuevo estado para la cantidad de inversión
+  const contractTokenAddress = '0xe051aeF51F721D107E1A81B675eA2ad43ca4F682';
 
   async function loadBlockchainData() {
     try {
@@ -18,11 +19,13 @@ function App() {
   
       const ethBalance = await web3.eth.getBalance(account);
       setEthBalance(web3.utils.fromWei(ethBalance, 'ether'));
-  
-      // Consultar el saldo de tokens (BodoCoin) desde tu contrato inteligente
-      const contract = new web3.eth.Contract(contractABI, '0xe051aeF51F721D107E1A81B675eA2ad43ca4F682'); 
-      const tokenBalance = await contract.methods.balanceOf(account).call();
-      setTokenBalance(tokenBalance);
+
+
+
+      const contractTokenContract = new web3.eth.Contract(contractABI, contractTokenAddress);
+      const contractTokenBalanceWei = await contractTokenContract.methods.balanceOf(account).call();
+      const contractTokenBalance = web3.utils.fromWei(contractTokenBalanceWei, 'ether');
+        setTokenBalance(contractTokenBalance);
   
       // Consultar el estado de la ICO desde tu contrato inteligente
       const icoStatus = await contract.methods.icoStatus().call();
@@ -79,6 +82,10 @@ function App() {
       console.error('Error al reclamar tokens:', error);
       alert('Error al reclamar tokens. Consulta la consola para obtener más detalles.');
     }
+
+
+
+
   }
   
 
@@ -88,7 +95,7 @@ function App() {
         <h1>BODOCOIN Interface</h1>
       </div>
       <p><strong>Cuenta actual:</strong> {account}</p>
-      <p><strong>Saldo disponible:</strong> {ethBalance} SepoliaETH</p>
+      <p><strong>Saldo en SepoliaETH:</strong> {ethBalance} </p>
       <p><strong>Saldo en BDC:</strong> {tokenBalance}</p>
       <p><strong>Estado ICO:</strong> {icoStatus}</p>
 
