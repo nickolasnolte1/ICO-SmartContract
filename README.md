@@ -33,8 +33,8 @@ El contrato inteligente fue desarrollado en `Solidity` y cumple con los siguient
 
 ## Requerimientos para correr el app
 
-1. Es necesario instalar el módulo de Web3 con el siguiente comando: `npm install web3`
-2. Es necesario instalar el módulo de Ethers con el siguiente comando: `nmp install ethers`
+1. Es necesario instalar el módulo de *Web3* con el siguiente comando: `npm install web3`
+2. Es necesario instalar el módulo de *Ethers* con el siguiente comando: `nmp install ethers`
 3. 
 
 
