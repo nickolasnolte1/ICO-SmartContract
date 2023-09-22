@@ -16,20 +16,28 @@ function App() {
   }, []);
 
   async function loadBlockchainData() {
-    const accounts = await web3.eth.getAccounts();
-    const account = accounts[0];
-    setAccount(account);
-
-    const ethBalance = await web3.eth.getBalance(account);
-    setEthBalance(web3.utils.fromWei(ethBalance, 'ether'));
-
-    // Añadir la lógica para obtener el saldo de tokens (BodoCoin)
-    // y el estado de la ICO aquí
-
-    // Simulamos valores ficticios para fines de demostración
-    setTokenBalance('1000');
-    setIcoStatus('En curso');
+    try {
+      const accounts = await web3.eth.getAccounts();
+      const account = accounts[0];
+      setAccount(account);
+  
+      const ethBalance = await web3.eth.getBalance(account);
+      setEthBalance(web3.utils.fromWei(ethBalance, 'ether'));
+  
+      // Consultar el saldo de tokens (BodoCoin) desde tu contrato inteligente
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      const tokenBalance = await contract.methods.balanceOf(account).call();
+      setTokenBalance(tokenBalance);
+  
+      // Consultar el estado de la ICO desde tu contrato inteligente
+      const icoStatus = await contract.methods.icoStatus().call();
+      setIcoStatus(icoStatus === true ? 'En curso' : 'Finalizada');
+    } catch (error) {
+      console.error('Error al cargar datos desde el contrato:', error);
+      alert('Error al cargar datos desde el contrato. Consulta la consola para obtener más detalles.');
+    }
   }
+  
 
   async function investInICO() {
     try {
@@ -61,7 +69,7 @@ function App() {
   async function claimTokens() {
     try {
       // Llama a la función de reclamación de tokens en tu contrato inteligente
-      const contract = new web3.eth.Contract(contractABI, contractAddress); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
+      const contract = new web3.eth.Contract(contractABI, '0xECB13Cf26CA05A4C65cb8bdA5230036adc52A2BA'); // Reemplaza 'contractABI' y 'contractAddress' con los valores reales
       await contract.methods.claimTokens().send({
         from: account,
       });
