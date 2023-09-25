@@ -1,4 +1,5 @@
-# ICO - Smart Contract
+# Technologies & Freedom
+## ICO - Smart Contract
 
 ![Screenshot](screenshot.png)
 
